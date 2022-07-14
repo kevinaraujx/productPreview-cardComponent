@@ -1,7 +1,7 @@
 # Frontend Mentor - Product preview card component solution
 
 <p align="center">
-  Essa é uma solução para <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="blank">Product preview card component challenge on Frontend Mentor</a>
+  Essa é uma solução para <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank">Product preview card component challenge on Frontend Mentor</a>
 </p>
 
 ![Frontend Mentor _ Product preview card component](https://user-images.githubusercontent.com/82170234/179108787-4542978f-36db-4c54-8dff-5810908850a3.png)
