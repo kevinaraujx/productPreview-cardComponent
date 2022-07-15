@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+  --cyan: hsl(158, 36%, 37%);
+  --dark-cyan: hsl(157, 43%, 21%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 991px) {
+  body {
+    background: var(--cream);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    border-radius: 10px;
+    background: var(--white);
+  }
+
+  .image {
+    background: url(../images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    aspect-ratio: 1.3;
+  }
+
+  .textos {
+    margin-left: 20px;
+  }
+
+  .textos p:first-child {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 6px;
+  }
+
+  .textos h1 {
+    font-family: 'Fraunces', serif;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .textos p:nth-child(3) {
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 20px;
+    width: 80%;
+    color: var(--dark-grayish-blue);
+  }
+
+  .precos {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 0 20px;
+    gap: 20px;
+  }
+
+  .precos p:first-child {
+    color: var(--dark-cyan);
+    font-size: 1.8rem;
+    font-family: 'Fraunces', serif;
+  }
+
+  .precos p:nth-child(2) {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+  }
+
+  .botao-adicionar a {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--dark-cyan);
+  }
+}
+
+@media (min-width: 991px){
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cream);
+  }
+
+  .container {
+    border-radius: 10px;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+  }
+  
+  .image {
+    background: url(../images/image-product-desktop.jpg) no-repeat;
+    background-size: 100%;
+    height: 30rem;
+    width: 20rem;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .textos {
+    margin-left: 20px;
+  }
+
+  .textos p:first-child {
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: var(--dark-grayish-blue);
+  }
+
+  .textos h1 {
+    font-family: 'Fraunces', serif;
+    margin-top: 15px;
+    width: 90%;
+  }
+
+  .textos p:nth-child(3) {
+    color: var(--dark-grayish-blue);
+    line-height: 20px;
+    font-size: .9rem;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .precos {
+    margin: 30px 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .precos p:first-child {
+    color: var(--cyan);
+    font-size: 1.8rem;
+    font-family: 'Fraunces', serif;
+  }
+
+  .precos p:nth-child(2) {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+  }
+
+  .botao-adicionar a {
+    display: flex;
+    margin: 30px 20px 0 20px;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--cyan);
+    transition: .3s ease;
+  }
+
+  .botao-adicionar a:hover {
+    background: var(--dark-cyan);
+  }
+}
